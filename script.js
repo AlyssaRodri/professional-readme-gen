@@ -1,5 +1,5 @@
 // Here I required both inquirer and fs to run the script file
-const inquirer = require('inquirerinquirer')
+const inquirer = require('inquirer')
 const fs = require('fs')
 
 // variable that holds a list of all the licensing choices.
@@ -88,7 +88,7 @@ const askUser = () => {
             //Installation
             type: 'input',
             name: 'installation',
-            message: 'Give us some instructions on how we would install and run the project'
+            message: 'Give us some instructions on how we would install and run the project.'
         },
         {
             //Usage
@@ -114,13 +114,13 @@ const askUser = () => {
             //Tests
             type: 'input',
             name: 'tests',
-            message: 'Please explain all tests that a user should perform in your application'
+            message: 'Please explain all tests that a user should perform in your application.'
         },
         {
             //Github
             type: 'input',
             name: 'github',
-            message: 'Please provide a link to your GitHub'
+            message: 'Please provide a link to your GitHub.'
         },
         {
             //Email
@@ -143,6 +143,7 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
  - [Installation](#installation)
  - [Usage](#usage)
  - [Contributions](#contributions)
+ - [License](#license)
  - [Test](#tests)
  - [Questions](#questions)
 
@@ -157,6 +158,10 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
  ## Contributions
 
  ${contributions}
+
+ ## License
+
+ ${license}
 
  ## Tests
 
